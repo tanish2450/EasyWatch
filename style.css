@@ -1,0 +1,33 @@
+html, body {
+  margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+  background: #0b0b10; color: #fff; font-family: sans-serif;
+}
+.hidden { display: none !important; }
+
+#menu {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.tile { display: flex; flex-direction: column; align-items: center; margin: 0 35px; }
+.circle {
+  width: 340px; height: 340px; border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.12);
+}
+.circle svg { width: 230px; height: 230px; }
+.label { margin-top: 44px; font-size: 52px; font-weight: bold; }
+.red .circle, .circle.red { background: #e53935; }
+.green .circle, .circle.green { background: #2e9e44; }
+.yellow .circle, .circle.yellow { background: #f2c200; }
+.blue .circle, .circle.blue { background: #1e63d6; }
+
+#loading {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+#loadingCircle { width: 520px; height: 520px; animation: pulse 1.4s ease-in-out infinite; }
+#loadingCircle svg { width: 350px; height: 350px; }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+
+#status {
+  position: absolute; left: 0; right: 0; bottom: 70px; text-align: center; font-size: 46px;
+}

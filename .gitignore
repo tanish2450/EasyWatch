@@ -1,0 +1,16 @@
+# Local secrets — never commit real keys
+config.js
+
+# Tizen build artifacts
+*.wgt
+author-signature.xml
+signature1.xml
+.manifest.tmp
+.buildResult/
+.sign/
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+*.log
+o.txt

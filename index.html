@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<title>EasyWatch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Picture menu: the four circles sit in the same order as the remote's colour keys -->
+<div id="menu">
+  <div class="tile red">
+    <div class="circle"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#ffd54a"/><path d="M30 40 q6-8 12 0 M58 40 q6-8 12 0" stroke="#5a3a00" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M27 55 q23 28 46 0 z" fill="#5a3a00"/></svg></div>
+    <div class="label">తెలుగు కామెడీ</div>
+  </div>
+  <div class="tile green">
+    <div class="circle"><svg viewBox="0 0 100 100"><circle cx="35" cy="52" r="26" fill="#ffd54a"/><circle cx="67" cy="48" r="26" fill="#ffb84a"/><path d="M24 50 q4-5 8 0 M38 50 q4-5 8 0 M56 46 q4-5 8 0 M70 46 q4-5 8 0" stroke="#5a3a00" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M24 60 q11 14 22 0 z M56 56 q11 14 22 0 z" fill="#5a3a00"/></svg></div>
+    <div class="label">సౌత్ కామెడీ</div>
+  </div>
+  <div class="tile yellow">
+    <div class="circle"><svg viewBox="0 0 100 100"><rect x="18" y="38" width="64" height="44" rx="4" fill="#fff"/><path d="M18 26 l60 -10 l4 12 l-60 10 z" fill="#fff"/><path d="M28 24 l8 10 M44 21 l8 10 M60 18 l8 10" stroke="#222" stroke-width="5"/><path d="M42 48 l18 12 l-18 12 z" fill="#d33"/></svg></div>
+    <div class="label">సినిమాలు</div>
+  </div>
+  <div class="tile blue">
+    <div class="circle"><svg viewBox="0 0 100 100"><path d="M50 18 q14 18 0 34 q-14 -16 0 -34 z" fill="#ffb300"/><path d="M50 30 q6 9 0 18 q-6 -9 0 -18 z" fill="#fff3b0"/><path d="M20 58 h60 q-4 22 -30 22 q-26 0 -30 -22 z" fill="#e0782a"/><rect x="44" y="52" width="12" height="7" fill="#8a4a1a"/></svg></div>
+    <div class="label">దేవుడి పాటలు</div>
+  </div>
+</div>
+
+<!-- Shown while YouTube is being opened -->
+<div id="loading" class="hidden">
+  <div id="loadingCircle" class="circle"></div>
+  <div id="loadingText" class="label"></div>
+</div>
+
+<div id="status" class="hidden"></div>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
