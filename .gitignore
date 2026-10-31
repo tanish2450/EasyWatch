@@ -1,5 +1,6 @@
 # Local secrets — never commit real keys
 config.js
+firmware/easywatch/secrets.h
 
 # Tizen build artifacts
 *.wgt
